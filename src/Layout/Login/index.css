@@ -1,0 +1,81 @@
+.backgroundPicture{
+/* Rectangle 4 */
+
+
+background: linear-gradient(218.21deg, #5038ED -3.5%, #FB773F 53.35%);
+
+
+}
+
+
+
+
+background: url(.png), linear-gradient(218.21deg, #5038ED -3.5%, #FB773F 53.35%);
+
+
+
+.glassDiv{
+    background: rgba( 255, 255, 255, 0.3 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 11px );
+-webkit-backdrop-filter: blur( 11px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.BarColor{
+    background-color: #f7f7f5;
+}
+
+/* Rectangle 4 */
+
+.bgSignUp{
+   /* Rectangle 4 */
+
+
+background-color: #e2e2e2;
+
+
+/* background: linear-gradient(218.21deg, #5038ED -3.5%, #FB773F 53.35%); */
+}
+
+/* 
+<motion.div
+
+layout
+
+className={` ${!IsSignUp ? 'w-6/12 backgroundPicture' : 'w-5/12 bgSignUp '}   flex flex-col items-center justify-center relative relative`}>
+<MotionConfig transition={{ duration: 0.5 }}>
+
+ 
+
+
+<>   <motion.div layout="position"
+    layoutId='1'
+
+    className='w-[300px] h-[400px] border-2  glassDiv  text-white  poppins-medium text-2xl rounded-3xl' >
+   <p className='p-5'>Very good <br />
+      works are <br />
+      waiting for
+      you <br /> {!IsSignUp ? 'Login Now !!!' : "Sign Up Now!!!"} </p>
+
+  </motion.div>
+   <motion.img
+
+
+
+      className=' w-[600px]  absolute ' src="Images/WomenLogin.png" alt="" />
+</>
+
+  
+
+
+</MotionConfig>
+
+
+
+
+
+
+</motion.div>
+ */

@@ -1,0 +1,1 @@
+<div class="mt-6"><div class="w-full bg-orange-500 text-white py-2 px-4 rounded-lg flex justify-center mb-3 mx-3 cursor-pointer">Send</div><div class="w-full text-primary  border-primary border-2 flex justify-center py-2 px-4 rounded-lg outline-2  mx-3 cursor-pointer">Close</div></div>

@@ -1,0 +1,7 @@
+.rounded-chart {
+    width: 100%;
+    height: 100%;
+    border-bottom-left-radius: 15px; /* Adjust the radius as needed */
+    border-bottom-right-radius: 15px; /* Adjust the radius as needed */
+    overflow: hidden;                  /* Ensures child elements respect the border-radius */
+  }

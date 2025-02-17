@@ -1,0 +1,191 @@
+.backgroundPicture{
+/* Rectangle 4 */
+
+
+background: linear-gradient(218.21deg, #5038ED -3.5%, #FB773F 53.35%);
+
+
+}
+
+
+
+
+background: url(.png), linear-gradient(218.21deg, #5038ED -3.5%, #FB773F 53.35%);
+
+
+
+.glassDiv{
+    background: rgba( 255, 255, 255, 0.3 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 11px );
+-webkit-backdrop-filter: blur( 11px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.BarColor{
+    background-color: #f7f7f5;
+}
+
+
+.bgSignUp{
+
+
+background-color: #e2e2e2;
+
+
+}
+
+
+
+
+
+
+.stepper{
+    display: flex;
+    width: 100%;
+
+}
+.step{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex:1;
+    
+}
+
+.stepDetails{
+    display: flex;
+    justify-content: center;
+    
+    align-items: center;
+    flex-direction: column;
+
+background-color: #f7f7f5;
+    z-index: 4;
+}
+
+
+
+.step::before {
+    content: "";
+    position: absolute;
+    border-bottom: 2px solid #668dc0; /* Initial color */
+    width: 100%;
+    top: 50%;
+    left: -50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    transition: width 0.4s ease-in-out, border-color 0.4s ease-in-out;
+  }
+  
+  .step:first-child::before {
+    display: none; /* No line before the first step */
+  }
+  
+  .step.completed::before {
+    border-color: rgba(251, 119, 63, 0.5335); /* Completed color */
+  }
+  
+  .step.active::before {
+    border-color: rgba(251, 119, 63, 0.5335); /* Active color */
+    width: 50%;
+  }
+  
+  
+
+.step svg{
+    color: #668dc0;
+}
+.step span{
+    color: #668dc0;
+ 
+    padding: 10px 0;
+}
+
+.step.completed::after{
+    position: absolute;
+    content: "";
+    border-bottom: 2px solid rgba(251, 119, 63, 0.5335);
+    width: 0;
+    left: -50%;
+    z-index: 3;
+    transition: all .4s linear;
+}
+/* #FB773F */
+.step.active svg{
+    color: #FB773F;
+    padding: 10px;
+    background-color: #FB773F;
+    border: 3px solid rgba(239, 176, 176, 0.55);
+    border-radius: 100%;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.step.active span{
+    color: rgb(251, 119, 63);
+    font-weight: 500;
+}
+.step.completed svg{
+    color: #FB773F;
+    padding: 10px;
+    background-color: #FB773F;
+    border-radius: 100%;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.step.completed span{
+    /* color: rgba(251, 119, 63, 0.5335); */
+    color: #FB773F;
+    font-weight: 500;
+}
+
+
+
+.step:first-child::before{
+    content: none;
+}
+
+.step:last-child::after{
+    content: none;
+}
+
+
+.btnContainer{
+    margin: 40px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+button{
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: #053659;
+    color:#ffffff;
+    font-weight: 900;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.InputBorder{
+    border-width: 1px;
+    border-color: #CEC8C8;
+}
+
+@media (max-width: 400px) {
+    .step svg {
+      height: 20px;
+      width: 20px;
+      padding: 1px 0;
+    }
+  }

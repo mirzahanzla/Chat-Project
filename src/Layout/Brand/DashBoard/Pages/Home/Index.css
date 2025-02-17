@@ -1,0 +1,52 @@
+.navBgColor{
+    border:1px solid #7B7878;
+}
+
+
+.navbgPrimary{
+    border:1px solid orangered;
+}
+
+
+.OverViewBox1{
+   box-shadow: 16px 19px 112px -36px rgba(0,0,0,0.75);
+}
+
+.IsBorder:last-of-type {
+    border-bottom: 0px;
+}
+
+/* Apply to the container where you want the custom scrollbar */
+.scroll-container {
+  /* Set your container height */
+    overflow-y: hidden; /* Enable vertical scrolling */
+    overflow-x: scroll; /* Disable horizontal scrolling */
+    /* border: px solid #f97316; */
+    /* Optional: Add a border to the container */
+  }
+  
+  /* Style for the scrollbar track */
+  .scroll-container::-webkit-scrollbar {
+    width: 2px;
+    height: 12px; /* Width of the scrollbar */
+    background-color: rgb(255, 255, 255); /* Background color of the scrollbar track */
+  }
+  
+  /* Style for the scrollbar thumb */
+  .scroll-container::-webkit-scrollbar-thumb {
+    background-color:  #ffffff;/* Color of the scrollbar thumb */
+    border-radius:  9999px; /* Rounded corners of the scrollbar thumb */
+    /* border: 3px solid #f97316; Optional: Border for the scrollbar thumb */
+    border: 1px solid #d7b49a; /* Optional: Border for the scrollbar thumb */
+  }
+  
+  /* Style for the scrollbar thumb on hover */
+  .scroll-container::-webkit-scrollbar-thumb:hover {
+    background-color: #f97316; /* Darker color on hover */
+  }
+  
+  /* Style for the scrollbar corner (for when both scrollbars are present) */
+  .scroll-container::-webkit-scrollbar-corner {
+    background-color: transparent; /* Transparent or match the track background */
+  }
+  

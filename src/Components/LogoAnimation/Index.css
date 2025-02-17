@@ -1,0 +1,163 @@
+.test {
+    stroke-dasharray: 247;
+  
+    stroke: #FB773F;
+  
+    stroke-width: 1px; 
+    animation: ani1 7s ease-in-out  1, fillAnim2 7s   steps(1, end)  forwards;;
+  }
+
+  @keyframes ani1 {
+    0% {
+      stroke-dashoffset: -247;
+    }
+    100% {
+      stroke-dashoffset: 0;
+    }
+  }
+
+
+  .test2{
+
+    stroke-dasharray: 202;
+  
+    stroke:#FB773F;
+  
+    stroke-width: 1px; 
+    animation: ani2 7s ease-in-out 1 forwards, fillAnim 7s   steps(1, end)  forwards;
+  }
+  @keyframes ani2 {
+    0% {
+      stroke-dashoffset: -202;
+    }
+    100% {
+      stroke-dashoffset: 0;
+    }
+  }
+
+
+  @keyframes fillAnim {
+    0% {
+      fill: none;
+    }
+    100% {
+      fill: #FB773F;
+    }
+  }
+
+
+
+  .test3{
+
+    stroke-dasharray: 106;
+  
+    stroke: #FB773F;
+    stroke-width: 1px; 
+    
+    animation: ani3 7s ease-in-out  1 forwards , fillAnim2 7s   steps(1, end)  forwards;;
+  }
+
+  @keyframes ani3 {
+    0% {
+      stroke-dashoffset: -106;
+    }
+    100% {
+      stroke-dashoffset: 0;
+    }
+
+  }
+
+
+  .test4{
+
+    stroke-dasharray: 153;
+  
+    stroke:#FB773F;
+    stroke-width: 1px; 
+    
+    animation: ani4 7s ease-in-out  1 forwards, fillAnim2 7s   steps(1, end)  forwards;
+  }
+
+  @keyframes ani4 {
+    0% {
+      stroke-dashoffset: -153;
+    }
+    100% {
+      stroke-dashoffset: 0;
+    }
+
+  }
+
+
+  @keyframes fillAnim2{
+   
+    100% {
+      fill: #FB773F;
+    }
+  }
+
+
+ 
+
+  .test5{
+
+    stroke-dasharray: 5;
+  
+    stroke: #FB773F;
+  
+    
+    animation: ani5 7s  steps(1, end) 1 forwards, fillAnim2 7s   steps(1, end)  forwards;
+  }
+
+  @keyframes ani5 {
+    0% {
+      display: none;
+    }
+    100% {
+     display:block ;
+    }
+
+  }
+
+
+  @keyframes fillAnim2{
+   
+    100% {
+      fill: white;
+    }
+  }
+
+ 
+
+
+.dots{
+
+  
+    animation: anidots  7s  steps(1, end)  forwards
+}
+
+
+@keyframes anidots {
+    0%{
+        opacity: 0;
+    }
+ 
+    100% {
+       opacity: 1;
+    }
+
+  }
+
+
+.loader {
+  width: 220px;
+  height: 10px;
+  border-radius: 20px;
+  background:
+   linear-gradient(#FB773F 0 0) 0/0% no-repeat
+   lightblue;
+  animation: l2 8s infinite steps(10);
+}
+@keyframes l2 {
+    100% {background-size:110%}
+}

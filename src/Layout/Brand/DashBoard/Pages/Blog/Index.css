@@ -1,0 +1,38 @@
+.centered-spinner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgba(255, 255, 255, 0.8); /* Optional: semi-transparent background */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999; /* Ensure spinner is on top */
+}
+
+.spinner {
+    border: 4px solid rgba(0, 0, 0, 0.1); /* Light grey */
+    border-left: 4px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* In your CSS file or inside a <style> tag */
+
+.relative {
+    position: relative; /* Ensure the container is positioned relative */
+}
+  
+.absolute {
+    position: absolute; /* Dropdown menu should be positioned absolutely */
+    z-index: 50; /* Ensure it appears above other content */
+}
